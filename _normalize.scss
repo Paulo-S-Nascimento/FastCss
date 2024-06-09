@@ -1,0 +1,179 @@
+
+/* Document
+   ========================================================================== */
+
+   html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Article
+     ========================================================================== */
+  
+  article, aside, footer, header, nav, section {
+    display: block;
+  }
+  
+  /* Heading
+     ========================================================================== */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* List
+     ========================================================================== */
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Blockquote
+     ========================================================================== */
+  
+  blockquote, q {
+    quotes: none;
+  }
+  
+  blockquote::before, blockquote::after,
+  q::before, q::after {
+    content: '';
+    content: none;
+  }
+  
+  /* Table
+     ========================================================================== */
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  button, input, select, textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  button, input { /* 1 */
+    overflow: visible;
+  }
+  
+  button, select { /* 1 */
+    text-transform: none;
+  }
+  
+  button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  legend {
+    box-sizing: border-box;
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    white-space: normal; /* 1 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  b, strong {
+    font-weight: bolder;
+  }
+  
+  code, kbd, samp, pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  small {
+    font-size: 80%;
+  }
+  
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  button, input, select, textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  details {
+    display: block;
+  }
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  [hidden] {
+    display: none;
+  }
+  
