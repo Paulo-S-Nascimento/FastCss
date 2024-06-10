@@ -1,0 +1,28 @@
+@use "variables" as var;
+
+
+@mixin breakpoints( $device ){
+    @if $device == "celular"{
+        @media(max-width: 768px){
+            @content;
+        }
+    }
+    @else if $device == "tablet"{
+        @media(min-width: 768px) and (max-width: 1024px){
+            @content;
+        }
+    }
+
+    @else if $device == "desktop"{
+        @media(min-width: 1025px){
+            @content;
+        }
+    }
+ 
+    @else if $device == "telao"{
+        @media(min-width: 1920px){
+            @content;
+        }
+    }
+
+}

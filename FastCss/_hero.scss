@@ -1,0 +1,65 @@
+@use "variables" as var;
+@use "mixins" as mix;
+ 
+
+.hero-model {
+    background-color: var.$cinza;
+    border-radius: 50px;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 20px 20px 20px;
+    margin: 0px 20px 0px 20px;
+
+    div {
+        overflow: hidden;
+        word-wrap: break-word;
+        border-radius: 20px;
+        padding: 30px 30px 30px 30px;
+
+        h1 {
+            font-size: var.$fonte-gg;
+            font-family: var.$fonte;
+        }
+
+        p {
+            font-size: var.$fonte-pm;
+            font-family: var.$fonte;
+        }
+
+        }
+
+    }
+
+    img {
+        border-radius: 20px;
+
+        width: 750px;
+        height: 300px;
+    }
+
+    @include mix.breakpoints("celular") {
+        .hero-model {
+            border-radius: 40px;
+            flex-direction: column-reverse;
+            gap: 10px;
+            margin: 0px 20px 0px 20px;
+        
+            div {
+        
+                h1 {
+                    font-size: var.$fonte-g;
+                }
+              }
+            }
+        
+            img {
+                margin: 20px 0px;
+                width: 310px;
+                height: 300px;
+            }  
+     }

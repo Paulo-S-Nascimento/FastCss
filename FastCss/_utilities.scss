@@ -1,0 +1,118 @@
+@use "variables" as var;
+
+
+.button-p {
+    background-color: var.$preto;
+    font-family: var.$fonte;
+    color: var.$branco;
+    font-size: var.$fonte-p;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten(var.$preto, 20%);
+
+    }
+ }
+
+ .button-m {
+    background-color: var.$preto;
+    font-family: var.$fonte;
+    color: var.$branco;
+    font-size: var.$fonte-p;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten(var.$preto, 20%);
+
+    }
+ }
+
+ .button-g {
+    background-color: var.$preto;
+    font-family: var.$fonte;
+    color: var.$branco;
+    font-size: var.$fonte-pm;
+    padding: 10px 50px 10px 50px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten(var.$preto, 20%);
+
+    }
+ }
+
+ .button-gg {
+    background-color: var.$preto;
+    font-family: var.$fonte;
+    color: var.$branco;
+    font-size: var.$fonte-m;
+    padding: 10px 80px 10px 80px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten(var.$preto, 20%);
+
+    }
+ }
+
+ .input-p {
+    font-family: var.$fonte;
+    font-size: var.$fonte-pp;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid var.$preto;
+    border-radius: 50px;
+    cursor: pointer;
+
+    &:focus {
+        border: 2px solid var.$cinza;
+    }
+ }
+
+ .input-m {
+    font-family: var.$fonte;
+    font-size: var.$fonte-p;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid var.$preto;
+    border-radius: 50px;
+    cursor: pointer;
+
+    &:focus {
+        border: 2px solid var.$cinza;
+    }
+ }
+
+ .input-g {
+    font-family: var.$fonte;
+    font-size: var.$fonte-p;
+    padding: 10px 150px 10px 20px;
+    border: 1px solid var.$preto;
+    border-radius: 50px;
+    cursor: pointer;
+
+    &:focus {
+        border: 2px solid var.$cinza;
+    }
+ }
+
+ .input-gg {
+    font-family: var.$fonte;
+    font-size: var.$fonte-p;
+    padding: 10px 250px 10px 20px;
+    border: 1px solid var.$preto;
+    border-radius: 50px;
+    cursor: pointer;
+
+    &:focus {
+        border: 2px solid var.$cinza;
+    }
+ }

@@ -1,0 +1,109 @@
+@use "variables" as var;
+@use "mixins" as mix;
+ 
+
+.header-model {
+    background-color: var.$branco;
+    font-family: var.$fonte;
+    font-size: var.$fonte-p; 
+    
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 15px 50px 05px 50px;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        h1 {
+            color: var.$preto-texto;
+            font-size: var.$fonte-p; 
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px; 
+            text-decoration: none;
+            color: var.$preto-texto;
+
+            &:hover {
+                color: lighten(var.$preto, 40%);
+            }
+
+            &:hover > img {
+                opacity: 0.7;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+                
+            }  
+        }
+    }
+}
+
+@include mix.breakpoints("celular") {
+
+   .header-model {
+    font-size: var.$fonte-pp; 
+    
+    div {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0px 05px 0px;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        h1 {
+            font-size: var.$fonte-p; 
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 15px 0px 0px 0px;
+
+        a:not(:has(> img)) {
+            display: none; 
+        }
+
+        a {
+            img {
+                width: 10px;
+                height: 10px;     
+            }  
+        }
+
+        .button-p {
+            font-size: var.$fonte-pp;
+            padding: 5px 10px 5px 10px;
+         }
+    }
+
+    hr {
+        max-width: 100vh;
+    }
+  }
+}
+
